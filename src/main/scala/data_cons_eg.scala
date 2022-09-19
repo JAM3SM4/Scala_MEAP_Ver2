@@ -7,7 +7,7 @@ examples */
 val ex1: List[Double] = List.Nil
 
 
-val ex2: List[Int] = List.Cons(1, Nil)
+val ex2: List[Int] = List.Cons(1, List.Nil)
 
 /* case Cons lets us write the following to allow us to build singly linked lists of arbitrary lengths. */
 

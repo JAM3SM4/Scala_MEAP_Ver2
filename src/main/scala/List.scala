@@ -37,14 +37,18 @@ object List: // a list data constructor representing the empty list.
       // List[A], which maybe nil or another Cons. As you might expect the sum function states the sum of the empty
       // list is 0, and the sum of the nonempty list is the first element.
       case Nil => 0
+      // the sum function states that the sum of the empty list equals zero. This is a recursive function
       case Cons(x, xs) => x + sum(xs) // List companion object. Contains functions for creating and working with lists.
-
+      // Pattern matching works like a switch statement that may descent into the structure of the expression it
+      // examines and extract subexpressions of that structure.
     def product(ds: List[Double]): Double = ds match // function that uses pattern matching to add up a list of integers
-      case  Nil => 1.0 // the sum of the empty list is 0
-      case Cons(0.0,_) => 0.0 // the su of a list starting with x is x plus the sum of the rest of the list.
+     // Its introduced with an expression(target or scrutinee) like ds, followed by the keyword match and a sequence
+     // of cases
+     // these are the cases where if the target matches the pattern in a case the result of that case becomes the result
+     // of the entire match expression. If multiple patterns match the target, Scala chooses the first mathing case.
+      case  Nil => 1.0
+      case Cons(0.0,_) => 0.0 // the sum of a list starting with x is x plus the sum of the rest of the list.
       case Cons(x, xs) => x * product(xs)
-
-
     def apply[A](as: A*):List[A] =
       if as.isEmpty then Nil
       else Cons(as.head, apply(as.tail*))

@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e69f7a3a-f340-41fe-ba50-150afce9a214" name="Changes" comment="Version control for List and data construction examples">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/List.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/data_cons_eg.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/apply.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ex_pattern_matching.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/exp_repl.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cad023b3508792e85c45$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cad023b3508792e85c45.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cad023b3508792e85c45.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.2.0/update/update_cache_3/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_3/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/List.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/List.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/data_cons_eg.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/data_cons_eg.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/MyProgram$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/MyProgram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/MyProgram.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/hello$package$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/hello$package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/hello$package.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/hello.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/printAbs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.2.0/classes/printAbs.tasty" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +36,18 @@
     </projectState>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="James &lt;jamesm4@outlook.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -50,37 +66,20 @@
     "ToolWindowGit.ShowToolbar": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="sbt Task.Unnamed">
-    <configuration name="printAbs" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="printAbs" />
-      <module name="untitled" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="SbtRunConfiguration" factoryName="sbt Task" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RunManager">
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="-usejavacp" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="tasks" value="" />
-      <option name="useSbtShell" value="true" />
-      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
-      <option name="workingDir" value="$PROJECT_DIR$" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.printAbs" />
-      <item itemvalue="sbt Task.Unnamed" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.printAbs" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ScalaProjectSettings">
     <option name="scala3DisclaimerShown" value="true" />
@@ -108,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663179089643</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version control for List and data construction examples">
+      <created>1663603214356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663603214356</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Version control for List and data construction examples">
+      <created>1663603301241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663603301241</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
